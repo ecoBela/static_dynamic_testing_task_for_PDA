@@ -27,7 +27,7 @@ class CardGame:
 
   dif highest_card(self, card1 card2): #def keyword required for creating a function is missing here
   if card1.value > card2.value:
-    return card
+    return card #typo, should be card1, not card
   else:
     return card2
   
