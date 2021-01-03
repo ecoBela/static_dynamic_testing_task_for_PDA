@@ -5,6 +5,8 @@
 # Correct the errors below that you spotted in task 1.
 
 class CardGame:
+  def __init__(self, cardlist):
+    self.cardlist = []
 
 
   def check_for_ace(self, card):
@@ -22,8 +24,8 @@ class CardGame:
   
 
 
-def cards_total(self, cards):
-  total
-  for card in cards:
-    total += card.value
-    return "You have a total of" + total
+  def cards_total(self, cards):
+    total
+    for card in cards:
+      total += card.value
+      return "You have a total of" + total
