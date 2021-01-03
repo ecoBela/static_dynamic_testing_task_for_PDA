@@ -15,7 +15,7 @@ Only comment on errors that would stop the tests running.
 ```python
 
 class CardGame:
-# the __init__ function is missing... need to add def __init__(self, cardlist) and any other parameters
+# the __init__ function is missing... need to add def __init__(self, cardlist) and any other parameters or attributes
 
 
   def check_for_ace(self, card):
@@ -26,7 +26,7 @@ class CardGame:
    
 
   dif highest_card(self, card1 card2): #def keyword required for creating a function is missing here
-  if card1.value > card2.value: #'self' is missing 
+  if card1.value > card2.value: 
     return card #typo, should be card1, not card
   else:
     return card2
@@ -35,7 +35,7 @@ class CardGame:
 
 def cards_total(self, cards): #could the lack of indentation here throw up an error?
   total #this line seems incomplete, should it be total=0 ?
-  for card in cards: #should be self.cards
+  for card in cards: 
     total += card.value
     return "You have a total of" + total
   
