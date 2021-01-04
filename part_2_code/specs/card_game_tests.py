@@ -21,4 +21,9 @@ class TestCardGame(unittest.TestCase):
     def test_card_game_has_cardlist(self):
         self.assertEqual([], self.card_game1.cardlist)
         self.assertEqual([], self.card_game3.cardlist)
+
+    def test_check_for_ace(self):
+        result = self.card_game1.check_for_ace(self.card1)
+        self.assertEqual(True, result)
+
     
