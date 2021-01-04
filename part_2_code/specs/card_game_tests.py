@@ -23,15 +23,20 @@ class TestCardGame(unittest.TestCase):
         self.assertEqual([], self.card_game3.cardlist)
 
     def test_check_for_ace(self):
+        # result = self.card_game2.check_for_ace(self.card_game2.cardlist[0].value)
+        # self.assertEqual(False, result)
         result = self.card_game1.check_for_ace(self.card1)
         result2 = self.card_game2.check_for_ace(self.card2)
         result3 = self.card_game1.check_for_ace(self.card2)
+        result4 = self.card_game2.check_for_ace(self.card1)
         self.assertEqual(True, result)
         self.assertEqual(False, result2)
         self.assertEqual(False, result3)
+        self.assertEqual(True, result4)
 
-    # def test_highest_card(self):
-    #     self.card_game3.highest_card(self.card3, self.card4)
+    def test_highest_card(self):
+        result = self.card_game3.highest_card(self.card3, self.card4)
+        self.assertEqual(self.card4, result)
 
 
     
