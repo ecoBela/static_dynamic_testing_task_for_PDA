@@ -7,6 +7,7 @@
 class CardGame:
   def __init__(self, cardlist):
     self.cardlist = []
+    
 
 
   def check_for_ace(self, card):
@@ -28,4 +29,5 @@ class CardGame:
     total = 0
     for card in cards:
       total += card.value
-      return "You have a total of" + total
+      # return "You have a total of" + total
+    return total
