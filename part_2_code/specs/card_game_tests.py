@@ -11,6 +11,7 @@ class TestCardGame(unittest.TestCase):
         self.card_game1 = CardGame([self.card1])
         self.card_game2 = CardGame([self.card2])
         self.card_game3 = CardGame([self.card3, self.card4])
+        self.card_game4 = CardGame([self.card1, self.card2])
 
     def test_card_has_value(self):
         self.assertEqual(2, self.card2.value)
@@ -40,7 +41,9 @@ class TestCardGame(unittest.TestCase):
 
     def test_cards_total(self):
         result = self.card_game3.cards_total([self.card4, self.card3])
+        result2 = self.card_game4.cards_total([self.card1, self.card2])
         self.assertEqual(19, result)
+        self.assertEqual(3, result2)
 
 
 
