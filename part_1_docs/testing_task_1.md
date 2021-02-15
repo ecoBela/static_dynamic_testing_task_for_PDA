@@ -16,10 +16,12 @@ Only comment on errors that would stop the tests running.
 
 class CardGame:
 # the __init__ function is missing... need to add def __init__(self, cardlist) and any other parameters or attributes
+#Also need to assign variable e.g. self.cardlist =[];
 
 
   def check_for_ace(self, card):
-    if card.value = 1: #will need to import the Card class to use its methods otherwise it won't recognise .value
+    if card.value = 1: #will need to import the Card class to use its methods otherwise it won't recognise .value 
+      #Also need to use double equals card.value == 1,  not card.value=1.
       return True
     else
       return False
